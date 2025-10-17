@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background-image: url(../images/Dee.jpg);
+    background-repeat: repeat;
+    background-size: 80vh auto;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    z-index: 10;
+    top: 0;
+}
+
+.nav-container{
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    height: 70px;
+    max-width: 1440px;
+    margin: auto;
+}
+
+.logo{
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+
+.home{
+    margin-left: auto;
+    padding: 10px 28px;
+    background-color: #f9b234;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s ease;
+}
+
+.home:hover{
+    background-color: #ffc04d;
+    box-shadow: 0px 4px 12px 0px rgba(249, 178, 52, 0.4);
+}
+
+.signin-container{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 20px 40px;
+}
+
+.signin{
+    background-color: white;
+    border-radius: 16px;
+    padding: 50px;
+    max-width: 450px;
+    width: 100%;
+}
+
+.signin h1{
+    font-size: 38px;
+    color: #1a1a1a;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.signin .subtitle{
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.form-group{
+    margin-bottom: 22px;
+}
+
+.form-group label{
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+}
+
+.form-group input{
+    width: 100%;
+    padding: 14px 18px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: sans-serif;
+    transition: all 0.2s ease;
+}
+
+.form-group input:focus{
+    outline: none;
+    border-color: #4facfe;
+}
+
+.form-options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.checkbox-group{
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-group input[type="checkbox"]{
+    margin-right: 8px;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+}
+
+.checkbox-group label{
+    font-size: 14px;
+    color: #666;
+    cursor: pointer;
+}
+
+.forgot{
+    font-size: 14px;
+    color: #666;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.forgot:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+.submit-btn{
+    width: 100%;
+    padding: 16px;
+    background-color: blue;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-bottom: 20px;
+}
+
+.signup-link{
+text-align: center;
+font-size: 14px;
+color: #666;
+}
+
+.signup-link a{
+color: #666;
+text-decoration: none;
+font-weight: 600;
+}
+
+.signup-link a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px){
+.nav-container{
+    padding: 0 20px;
+}
+
+.logo{
+    font-size: 28px;
+}
+
+.home-btn{
+    padding: 8px 20px;
+    font-size: 14px;
+}
+
+.signin{
+    padding: 40px 30px;
+}
+
+.signin h1{
+    font-size: 32px;
+}
+}
+
+@media (max-width: 480px) {
+.signin-container{
+    padding: 90px 15px 30px;
+}
+
+.signin{
+    padding: 30px 20px;
+}
+
+.signin h1{
+    font-size: 28px;
+}
+
+.signin .subtitle{
+    font-size: 15px;
+}
+
+.form-options{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.social-buttons{
+    flex-direction: column;
+}
+}
