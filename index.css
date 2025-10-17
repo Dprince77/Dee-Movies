@@ -10,7 +10,7 @@ body{
 
 .container{
     position: relative;
-    background-image: url(../first/images/img.jpeg);
+    background-image: url(images/img.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -528,4 +528,5 @@ footer{
     .watch{
         padding: 12px 25px;
     }
+
 }
